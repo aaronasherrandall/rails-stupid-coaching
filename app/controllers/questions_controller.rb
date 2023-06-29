@@ -10,15 +10,15 @@ class QuestionsController < ApplicationController
 
     # Checking if the question is not nil before processing
     if question
-      if question.downcase == "i am going to work"
-        @answer = "Great! Get to work!"
+      if question.downcase == 'i am going to work'
+        @answer = 'Great! Get to work!'
       elsif question.end_with?("?")
-        @answer = "Silly question, get dressed and go to work!"
+        @answer = 'Silly question, get dressed and go to work!'
       else
         @answer = "I don't care, get dressed and go to work!"
       end
     else
-      @answer = "Please ask a question."
+      @answer = 'Please ask a question.'
     end
   end
 end
